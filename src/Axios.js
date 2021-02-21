@@ -1,16 +1,20 @@
 /*
 This setup is trying to solve 2 problems:
+
 I don't want to make the same request twice...
 1. ... at the same time
       2. ... or in rapid succession
+
       Approach:
       I create a Axios, to store the response and data
       - If I have a recent response simply return that on
       - If a equivalent request is already running,
         merge with that request 
+
         Solution:
     Mimic fetch and Axios, but add my own Logic -
     so from the outside it looks like using Axios or fetch.
+
     But internally:
     - Store the data from a recent request in a cache
     - Merge requests using Promises
