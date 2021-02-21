@@ -27,7 +27,7 @@ export default function Comment({ post, setSelected }) {
     <Card className={classes.root} variant='outlined'>
       <CardHeader
         title='Comment Post'
-        //subheader={'updated  ' + moment(post.createdAt).fromNow()}
+        subheader={'updated  ' + moment(post.createdAt).fromNow()}
       />
 
       <form noValidate>

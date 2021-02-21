@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div>
+      <h1>sami</h1>
       <CheckAuth />
       <StatusSnackbar />
       <IfAuth>

@@ -21,7 +21,7 @@ function MyFriends() {
 
   const users = useSelector((state) => state.users.users);
 
-  useEffect(() => dispatch(getUserFriends(userData.friends)), []);
+  useEffect(() => dispatch(getUserFriends(userData.friends)));
 
   return (
     <>
